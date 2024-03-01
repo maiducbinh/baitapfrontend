@@ -15,15 +15,14 @@
         href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caprasimo&family=Great+Vibes&family=Inter:wght@600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Quicksand&family=Zeyada&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/signup.css">
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/userregister.css">
 </head>
 
-<body id="register">
+<body id="user-register">
     <div class="row vh-100 g-0">
         <!-- Left side -->
         <div class="col-lg-6 position-relative d-none d-lg-block">
-            <div class="bg-holder" style="background-image: url(/img/left_img.jpg)" ;></div>
+            <div class="bg-holder" style="background-image: url(/img/side_background_image.jpg)" ;></div>
         </div>
         <!-- Left side -->
 
@@ -32,8 +31,8 @@
             <div class="row align-items-center justify-content-center h-100 g-0 px-4 px-sm-0">
                 <div class="col col-sm-6 col-lg-7 col-xl-6">
                     <!--Logo-->
-                    <a href="#" class="d-flex justify-content-center mb-4">
-                        <img src="/img/logo.png" alt="" width="60">
+                    <a href="#"  class="d-flex justify-content-center mb-4">
+                        <img class="logo-img" src="/img/logo_web_page.jpg" alt="">
                     </a>
                     <!-- Logo -->
                     <div class="text-center mb-5">
@@ -87,23 +86,6 @@
         <!-- Right side -->
     </div>
 
+    <script src="../js/userregister.js"></script>
 </body>
-
-<script>
-    // Thêm mã JavaScript để kiểm tra nhập lại mật khẩu khi người dùng nhập xong
-    const passwordInput = document.getElementById('inputPassword');
-    const retypePasswordInput = document.getElementById('inputPasswordRetype');
-    const retypePasswordError = document.getElementById('retypePasswordError');
-
-    retypePasswordInput.addEventListener('blur', function () {
-        // blur: sự kiện xảy ra khi phần tử mất focus
-        // Kiểm tra xem nhập lại mật khẩu có khớp với mật khẩu ban đầu không
-        if (retypePasswordInput.value !== passwordInput.value) {
-            retypePasswordError.textContent = 'Xác nhận mật khẩu không thành công, mời nhập lại!';
-        } else {
-            retypePasswordError.textContent = '';
-        }
-    });
-</script>
-
 </html>

@@ -1,4 +1,10 @@
+*:has(#user-login) {
+    font-size: 1.2rem;
+}
 
+#user-login .logo-img{
+    width: 6rem;
+}
 
 #user-login .btn-outline-custom{
     color: #31374a;
