@@ -1,29 +1,29 @@
 
 
-.btn-outline-custom{
+#user-login .btn-outline-custom{
     color: #31374a;
     border-color: #ddd;
 }
-.btn-outline-custom:hover{
+#user-login .btn-outline-custom:hover{
     color: #31374a;
     border-color: #eee;
     background-color: #eee;
 }
-.btn{
+#user-login .btn{
     font-size: 0.8rem;
     font-weight: 700;
 }
-#btn-login{
+#user-login #btn-login{
     background-color: #DE2219;
     color: #fff;
 }
-#btn-login:hover{
+#user-login #btn-login:hover{
     background-color: #c81f17;
 }
-.btn i{
+#user-login .btn i{
   vertical-align: text-top;  
 }
-.bg-holder{
+#user-login .bg-holder{
     position: absolute;
     width: 100%;
     min-height: 100%;
@@ -33,7 +33,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.divider-content-center{
+#user-login .divider-content-center{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,6 +45,6 @@
     font-weight: 500;
     color: #999;
 }
-.divider{
+#user-login .divider{
     margin: 0.2rem 0;
 }
