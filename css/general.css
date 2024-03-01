@@ -21,3 +21,8 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+.logo-img {
+    width: 10rem;
+    height: 50%;
+}

@@ -1,27 +1,35 @@
-.btn-outline-custom{
+*:has(#user-register) {
+    font-size: 1.2rem;
+}
+
+#user-register .logo-img {
+    width: 6rem;
+}
+
+#user-register .btn-outline-custom{
     color: #31374a;
     border-color: #ddd;
 }
-.btn-outline-custom:hover{
+#user-register .btn-outline-custom:hover{
     color: #31374a;
     border-color: #eee;
     background-color: #eee;
 }
-.btn{
+#user-register .btn{
     font-size: 0.8rem;
     font-weight: 700;
 }
-#btn-login{
+#user-register #btn-login{
     background-color: #DE2219;
     color: #fff;
 }
-#btn-login:hover{
+#user-register #btn-login:hover{
     background-color: #c81f17;
-}
-.btn i{
+} 
+#user-register .btn i{
   vertical-align: text-top;  
 }
-.bg-holder{
+#user-register .bg-holder{
     position: absolute;
     width: 100%;
     min-height: 100%;
@@ -31,7 +39,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.divider-content-center{
+#user-register .divider-content-center{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,26 +51,26 @@
     font-weight: 500;
     color: #999;
 }
-.divider{
+#user-register .divider{
     margin: 0.2rem 0;
 }
 
-.main{
+#user-register .main{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.form-container{
+#user-register .form-container{
     width: 20rem;
     height: 30rem;
 }
 
-.error-message{
+#user-register .error-message{
     color: red;
 }
 
-.btn btn-primary{
+#user-register .btn btn-primary{
     align-self: center;
 }
