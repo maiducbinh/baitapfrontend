@@ -1,0 +1,153 @@
+.right-side {
+    /* max-height: 56rem; */
+}
+
+.table-question-card {
+    min-height: 32rem;
+}
+
+.table-question {
+    margin: 1.6rem 0.2rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 0.4rem;
+}
+
+.submit-btn {
+    color: #fff;
+    background-color: #37b24d;
+    transition: all 0.3s ease;
+    padding: 0.4rem 0.6rem;
+}
+
+.submit-card {
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.submit-card:hover .submit-btn{
+    background-color: #2f9e44;
+    color: #fff;
+    scale: 1.1;
+}
+
+.exam-content {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+
+.answer-card {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.answer-card-head {
+    height: 3.2rem;
+    font-size: 1.4rem;
+    background-color: #e6e8ea;
+    transition: all 0.2s ease;
+}
+.answer-card-body {
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+}
+
+.answer-card:hover {
+    scale: 1.02;
+    background-color: #fff9db;
+    border: solid 1px #f59f00 !important;
+}
+
+.answer-card:hover .answer-card-head{
+    background-color: #ffe066;
+}
+
+.answer-card.active {
+    scale: 1.01;
+    background-color: #fff9db;
+    border: solid 1px #f59f00 !important;
+}
+
+.active .answer-card-head  {
+    color: #fff;
+    background-color: #fcc419;
+}
+
+.table-question-item {
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    height: 2.8rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 1px #707070;
+    padding: 0.4rem 0.6rem;
+    transition: all 0.2s ease;
+}
+
+.table-question-item:hover {
+    background-color: #e6e8ea;
+}
+
+
+.active.table-question-item {
+    scale: 1.01;
+    border:solid 2px #c81f17;
+}
+
+.done.table-question-item {
+    color: #fff;
+    background-color: #228be6;
+}
+
+.card-countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+}
+
+#time .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time .circle svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+#time .circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 8;
+    stroke: #707070;
+    transform: translate(5px, 5px);
+}
+
+#time .circle svg circle:nth-child(2) {
+    stroke: #2f9e44;
+    stroke-dasharray: 440;
+}
+
+#time div {
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+    font-size: 2.8rem;
+}
