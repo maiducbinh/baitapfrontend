@@ -1,0 +1,16 @@
+body {
+    background-color: #f6f8fa; /* Màu nền bên ngoài wrapper */
+}
+
+.navbar{
+    background-color: #c0241c;
+    height: 3.5rem;
+    
+}
+.navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5rem; /* Thay đổi giá trị này để điều chỉnh khoảng cách */
+}
