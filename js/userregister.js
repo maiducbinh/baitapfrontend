@@ -12,3 +12,4 @@ retypePasswordInput.addEventListener('blur', function () {
         retypePasswordError.textContent = '';
     }
 });
+

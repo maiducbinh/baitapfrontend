@@ -1,5 +1,30 @@
-.right-side {
-    /* max-height: 56rem; */
+/* NAVBAR */
+
+.navbar{
+    background-color: #c0241c;
+    height: 3.5rem;
+}
+
+.nav-exam {
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5rem; /* Thay đổi giá trị này để điều chỉnh khoảng cách */
 }
 
 .table-question-card {
@@ -15,7 +40,7 @@
 
 .submit-btn {
     color: #fff;
-    background-color: #37b24d;
+    background-color: #c0241c;
     transition: all 0.3s ease;
     padding: 0.4rem 0.6rem;
 }
@@ -24,11 +49,12 @@
     border-radius: 6px;
     overflow: hidden;
     width: 100%;
+    cursor: pointer;
 }
 
 
 .submit-card:hover .submit-btn{
-    background-color: #2f9e44;
+    background-color: #861914;
     color: #fff;
     scale: 1.1;
 }
@@ -38,8 +64,25 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: solid 1px rgba(0, 0, 0, 0.175);
+    border-radius: 6px;
+    padding: 2.4rem !important;
 }
 
+.exam-header {
+    margin-bottom: 5rem;
+}
+
+.exam-footer {
+    margin-top: 5rem;
+}
+
+.question-card .card-header {
+    background-color: #b8babb;
+}
 
 .answer-card {
     cursor: pointer;
@@ -89,7 +132,7 @@
     justify-content: center;
     border:solid 1px #707070;
     padding: 0.4rem 0.6rem;
-    transition: all 0.2s ease;
+    transition: all 0.15s ease;
 }
 
 .table-question-item:hover {
@@ -104,7 +147,7 @@
 
 .done.table-question-item {
     color: #fff;
-    background-color: #228be6;
+    background-color: #737475;
 }
 
 .card-countdown {
