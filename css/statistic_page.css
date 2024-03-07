@@ -1,0 +1,115 @@
+/*bytewebster.com*/
+/*bytewebster.com*/
+/*bytewebster.com*/
+@import url(https://unpkg.com/@webpixels/css@1.1.5/dist/index.css);
+
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/* Left side  */
+.chart_border{
+    padding: 1rem;
+}
+
+/* Top rank  */
+.leaderboard_container {
+    padding: 1rem;
+}
+
+.rank__top{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.rank__top__side{
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    padding-top: 9.6px;
+    padding-left: 9.6px;
+    padding-right: 9.6px;
+    padding-bottom: 9.6px;
+    text-align: center;
+    max-width: 250px;
+    margin-top: 28.8px
+    
+}
+.rank__top__number{
+    font-size: 12.88px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f03800;
+}
+.rank__top__number p{
+    margin-top: 0;
+}
+.rank__top__avt{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 13.6px ;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.rank__top__avt img{
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+}
+.rank__top__info{
+    margin-bottom: 4px;
+}
+.rank__top__info p{
+    margin-top: 0;
+}
+.rank__top__info__name{
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1b1c1e;
+    margin-bottom: 4px;
+    font-size: 14.4px;
+}
+.rank__top__info__class{
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: normal;
+    text-align: center;
+    color: #888f9d;
+    font-size: 11.99px;
+}
+.rank__top__side{
+    border-radius: var(--border-radius-1);
+    box-shadow: 0 5px 10px #DC3545;
+    border-top: 4.2px solid #DC3545 !important;
+}
+.side_right{
+    box-shadow: 0 5px 10px rgb(56, 142, 60);
+    border-top: 4.2px solid rgb(56, 142, 60) !important;
+}
+.rank__top__mid{
+    border-radius: var(--border-radius-1);
+    box-shadow: 0 5px 10px #ffc34d;
+    border-top: 4.2px solid #ffc34d !important;
+}
+.rank__top__mid .rank__top__number img{
+    width: 24px;
+    top: 8px;
+    margin-bottom: -35px;
+}
+.rank__top__mid .rank__top__avt img{
+    border: solid 2px #ffc34d !important;
+    border-radius: 50%;
+}

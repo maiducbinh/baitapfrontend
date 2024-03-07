@@ -5,20 +5,23 @@ body {
 .item1 { 
     grid-area: left; 
     width: 40rem;
+    max-height: 15rem;
 }
 .item2 { 
     grid-area: right; 
-    width: 20rem;
+    width: 34rem;
+    max-height: 15rem;
 }
 .item3 {
-     grid-area: footer; }
+     grid-area: footer; 
+}
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'left left right right'
     'footer footer footer footer';
-  gap: 10px;
+  gap: 2rem;
   background-color: #f6f8fa;
   padding: 2rem;
 }
@@ -41,12 +44,6 @@ body {
     margin-right: 1.5rem; /* Thay đổi giá trị này để điều chỉnh khoảng cách */
 }
 
-.table_exam {
-    max-height: 200px; /* Set the maximum height of the table */
-    overflow-y: auto; /* Enable vertical scrolling */
-}
-
-
 .ques__table__head{
     background-color: #ffecec;
     height: 3.5rem;
@@ -57,21 +54,6 @@ body {
     background-color: #ffecec;
     border-radius: 5px;
     border: 2px solid #e1e4e8;
-}
-
-.submit_button{
-    border-radius: 5px;
-    border: 2px solid #e1e4e8;
-}
-
-.wrapper{
-    width: 35rem; /* Điều chỉnh giá trị tối đa theo nhu cầu của bạn */
-    margin: 0 auto;
-    padding: 2rem;
-    margin-top: 2rem;
-    border: 2px solid #e1e4e8;
-    background-color: #fbfdff;
-    border-radius: 5px; /* Điều chỉnh giá trị này để thay đổi độ bo tròn */
 }
 
 .ques__table__icon{
@@ -99,4 +81,11 @@ body {
 a {
     color: #d52125; /* Đặt màu chữ theo ý muốn, ví dụ: đỏ là red */
     /* Các thuộc tính khác tùy theo nhu cầu của bạn */
+}
+.table_body{
+    overflow-y: scroll;
+}
+.ques__table {
+    width: 100%;
+    border-bottom: solid 1px black;
 }
