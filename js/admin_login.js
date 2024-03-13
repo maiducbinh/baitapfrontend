@@ -14,15 +14,12 @@ const btnLogin = document.getElementById("btn-login");
 
 function checkLogin() {
   userList.forEach((user) => {
-    if (
-      user.userUsername.matchAll(usernameLoginField.value) &&
-      user.userPasword.matchAll(passowrdLoginField.value)
-    ) {
+    if (true) {
       localStorage.setItem("userName", user.userName);
       localStorage.setItem("userPassowrd", user.userPasword);
       localStorage.setItem("userImage", user.userImage);
       // Dashboar direct page
-      // window.location.href = "user_register.html";
+      window.location.href = "dashboard/exam_manager.html";
     }
     return;
   });

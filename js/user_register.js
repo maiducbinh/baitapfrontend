@@ -1,5 +1,4 @@
 // Thêm mã JavaScript để kiểm tra nhập lại mật khẩu khi người dùng nhập xong
-const usernameInput = document.getElementById('inputUsername');
 const passwordInput = document.getElementById('inputPassword');
 const retypePasswordInput = document.getElementById('inputPasswordRetype');
 const retypePasswordError = document.getElementById('retypePasswordError');
@@ -13,5 +12,3 @@ retypePasswordInput.addEventListener('blur', function () {
         retypePasswordError.textContent = '';
     }
 });
-
-
