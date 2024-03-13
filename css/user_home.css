@@ -44,6 +44,10 @@
   opacity: 1;
 }
 
+.main-section .navbar .nav-item.inPage {
+  opacity: 1;
+}
+
 .main-section .navbar .dropdown-menu .dropdown-item {
   transition: all 0.25s ease;
   color: #c81f17;
