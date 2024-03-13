@@ -1,0 +1,91 @@
+body {
+    background-color: #f6f8fa; /* Màu nền bên ngoài wrapper */
+}
+
+.item1 { 
+    grid-area: left; 
+    width: 40rem;
+    max-height: 15rem;
+}
+.item2 { 
+    grid-area: right; 
+    width: 34rem;
+    max-height: 15rem;
+}
+.item3 {
+     grid-area: footer; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'left left right right'
+    'footer footer footer footer';
+  gap: 2rem;
+  background-color: #f6f8fa;
+  padding: 2rem;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 0;
+}
+
+.navbar{
+    background-color: #c0241c;
+    height: 3.5rem;
+    
+}
+.navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5rem; /* Thay đổi giá trị này để điều chỉnh khoảng cách */
+}
+
+.ques__table__head{
+    background-color: #ffecec;
+    height: 3.5rem;
+    color: #5e6c89;
+}
+
+.search_grid{
+    background-color: #ffecec;
+    border-radius: 5px;
+    border: 2px solid #e1e4e8;
+}
+
+.ques__table__icon{
+    background-color: #c0241c;
+    color: aliceblue;
+    border-radius: 15%;
+    text-align: center;
+}
+
+.ques__table{
+    width: 70rem;
+    border-bottom: solid 1px black;
+}
+
+.table_grid{
+    border-bottom: solid 2px #e8ebee;
+    height: 3rem;
+}
+
+.ques__nav__title{
+    font-size: 20px; /* Đặt cỡ chữ theo ý muốn */
+    font-weight: bold; /* Đặt độ đậm nhạt của chữ */
+}
+
+a {
+    color: #d52125; /* Đặt màu chữ theo ý muốn, ví dụ: đỏ là red */
+    /* Các thuộc tính khác tùy theo nhu cầu của bạn */
+}
+.table_body{
+    overflow-y: scroll;
+}
+.ques__table {
+    width: 100%;
+    border-bottom: solid 1px black;
+}

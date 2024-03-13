@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    position: absolute;
+    top: 10px; /* Điều chỉnh vị trí từ phía trên */
+    left: 50%; /* Đặt nút ở giữa theo chiều ngang */
+    transform: translateX(-50%); /* Dịch chuyển nút về giữa theo chiều ngang */
+    background-color: #c0241c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Đảm bảo hình ảnh được xem là một khối dữ liệu */
+    margin-top: 50px; /* Khoảng cách giữa nút và hình ảnh */
+}

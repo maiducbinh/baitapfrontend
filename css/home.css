@@ -1,0 +1,81 @@
+body {
+    background-color: #f6f8fa; /* Màu nền bên ngoài wrapper */
+}
+
+.navbar{
+    background-color: #c0241c;
+    height: 3.5rem;
+    
+}
+
+.ques__nav__top{
+    height: 5rem;
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5rem; /* Thay đổi giá trị này để điều chỉnh khoảng cách */
+}
+
+.container_content{
+    width: 100
+    rem;
+    height: 300rem;
+}
+
+.ques__table__head{
+    background-color: #ffecec;
+    height: 3.5rem;
+    color: #5e6c89;
+}
+
+.search_grid{
+    background-color: #ffecec;
+    border-radius: 5px;
+    border: 2px solid #e1e4e8;
+}
+
+.submit_button{
+    border-radius: 5px;
+    border: 2px solid #e1e4e8;
+}
+
+.wrapper{
+    width: 75rem; /* Điều chỉnh giá trị tối đa theo nhu cầu của bạn */
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 2px solid #e1e4e8;
+    background-color: #fbfdff;
+    border-radius: 5px; /* Điều chỉnh giá trị này để thay đổi độ bo tròn */
+}
+
+.ques__table__icon{
+    background-color: #c0241c;
+    color: aliceblue;
+    border-radius: 15%;
+    text-align: center;
+}
+
+.ques__table{
+    width: 70rem;
+    border-bottom: solid 1px black;
+}
+
+.table_grid{
+    border-bottom: solid 2px #e8ebee;
+    height: 3rem;
+}
+
+.ques__nav__title{
+    font-size: 20px; /* Đặt cỡ chữ theo ý muốn */
+    font-weight: bold; /* Đặt độ đậm nhạt của chữ */
+}
+
+a {
+    color: #d52125; /* Đặt màu chữ theo ý muốn, ví dụ: đỏ là red */
+    /* Các thuộc tính khác tùy theo nhu cầu của bạn */
+}
