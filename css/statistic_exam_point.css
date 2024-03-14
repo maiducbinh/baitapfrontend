@@ -439,10 +439,7 @@
     flex: 1 1 auto;
     padding: 1.25rem 1.25rem;
 }
-.fixed-height-chart{
-    width: 760px;
-    height: 375px;
-}
+
 .fixed-height-chart #chartjs-pie{
     display: block;
     height: 250px;
@@ -460,4 +457,22 @@
     -webkit-text-fill-color: transparent;
     background-size: cover;
     background-position: center;
+}
+.chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink {
+    position: absolute;
+    direction: ltr;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+}
+.chart canvas{
+    width: 507px;
+    height: 250px;
+    display: block;
+    max-width: 100%;
 }

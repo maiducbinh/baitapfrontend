@@ -21,16 +21,51 @@ sidebarBtn.addEventListener("click",()=>{
 
 // Data for chart
 const lineData1 = [0, 1105, 585, 714, 467, 644, 503, 500, 698, 588, 196];
-const lineData2 = [19, 432, 738, 653, 774, 999, 1170, 509, 617, 704, 392];
+const lineData2 = [79, 432, 738, 653, 774, 999, 1100, 509, 617, 704, 392];
 const pieData1 = [5000, 4324];
 const pieData2 = [5000, 2607];
 // element
 const subjectSelector = document.getElementById("selectExamSubject");
 const examTypeRadios = document.querySelectorAll('input[name="examType"]')
 const yearSelector = document.getElementById("selectExamYear");
+function getAveragePoint(points)
+{
+  var sum = 0;
+  let i = 0;
+  points.forEach(point => {
+    sum = sum + point*i;
+    i = i + 1;
+  })
+  return (sum/5000).toFixed(2);
+}
+function getAttempt(attempts)
+{
+  var sum = 0;
+  attempts.forEach(attempt => {
+    sum = sum + attempt;
+  })
+  return sum;
+}
 // js for filter
 function displayChart()
 {
+  var randomNumber = Math.floor(Math.random() * 2) + 1;
+  var selectedLineData = [];
+  var selectedPieData = [];
+  console.log("random" + randomNumber)
+  if(randomNumber === 2)
+  {
+    selectedLineData = lineData2.concat();
+    selectedPieData = pieData2.concat();
+  }
+  else if(randomNumber === 1)
+  {
+    selectedLineData = lineData1.concat();
+    selectedPieData = pieData1.concat();
+  }
+  document.querySelector("#line-title").textContent = `Biểu đồ phân phối điểm - Bài thi ${document.querySelector('.form-check input[name="examType"]:checked').value} - Môn ${subjectSelector.value} - Năm ${yearSelector.value}`
+  document.querySelector("#attempts").textContent = `Tổng số lần tham gia: ${getAttempt(selectedPieData)}`;
+  document.querySelector("#average").textContent = `Điểm trung bình: ${getAveragePoint(selectedLineData)}`;
   new Chart(document.getElementById("chartjs-line"), {
     type: "line",
     data: {
@@ -40,7 +75,7 @@ function displayChart()
         fill: true,
         backgroundColor: "transparent",
         borderColor: "#c81f17",
-        data: lineData1
+        data: selectedLineData
       }]
     },
     options: {
@@ -62,12 +97,14 @@ function displayChart()
     }
   });
 
+  var pieChart = document.getElementById("chartjs-doughnut");
+  pieChart.style.height = "250px"
   new Chart(document.getElementById("chartjs-doughnut"), {
     type: "pie",
     data: {
       labels: ["Hoàn thành", "Chưa hoàn thành"],
       datasets: [{
-        data: pieData1,
+        data: selectedPieData,
         backgroundColor: [
             "#c81f17",
             "#dee2e6"
@@ -75,11 +112,10 @@ function displayChart()
         borderColor: "transparent"
       }]
     },
-    options: {
-        
+    options: { 
       maintainAspectRatio: false,
-      cutoutPercentage: 65,
-      responsive: true,
+      cutoutPercentage: 0,
+      
     }
   });
 }
@@ -128,6 +164,12 @@ examTypeRadios.forEach((item) => {
         displayChart();
       }
     })
+})
+$(document).ready(function() {
+  if(renderChart() == 1)
+  {
+    displayChart();
+  }
 })
 
 
