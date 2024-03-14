@@ -399,13 +399,34 @@
   border: 1px solid #c81f17;
 }
 
-.main-section .modal-content .left-side .question-card {
+.main-section .left-side .question-card {
   box-shadow: 1px 8px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.main-section .modal-content .left-side .question-card .card-header {
-  background-color: #ce352e;
+.main-section .left-side .question-card .card-header {
+  background-color: #fff;
+  color: #c81f17;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-section .left-side .question-card .card-header .btn-delete {
+  border-radius: 6px;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.main-section .left-side .question-card .card-header .btn-delete:hover i {
+  color: #e6e8ea;
+}
+
+.main-section .left-side .question-card .card-header .btn-delete i {
+  padding: 0.2rem 0.4rem;
+  font-size: 1.8rem;
   color: #fff;
+  background-color: #c81f17;
+  vertical-align: middle;
 }
 
 .main-section .input-group .answer-card-head {

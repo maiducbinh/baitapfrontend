@@ -25,14 +25,14 @@ new Chart(document.getElementById("chartjs-pie"), {
     datasets: [
       {
         data: [300, 100],
-        backgroundColor: ["#37b24d", "#c81f17"],
+        backgroundColor: ["#dee2e6", "#c81f17"],
         borderColor: "#fff",
       },
     ],
   },
   options: {
     maintainAspectRatio: true,
-    cutoutPercentage: 65,
+    cutoutPercentage: 0,
   },
 });
 
