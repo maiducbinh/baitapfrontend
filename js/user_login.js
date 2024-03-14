@@ -35,7 +35,7 @@ function checkLogin() {
       localStorage.setItem("userImage", user.userImage);
       localStorage.setItem("userClass", user.userImage);
       // Dashboar direct page
-      window.location.href = "user_home.html";
+      window.location.href = "page/user/user_home.html";
     }
     return;
   });
