@@ -89,6 +89,7 @@
   padding: var(--padding-1);
   border-radius: var(--card-border-radius);
   margin-top: 1rem;
+  justify-content: center;
   box-shadow: var(--box-shadow);
   transition: all 0.3s ease;
 }
@@ -581,4 +582,39 @@
   line-height: 1.43;
   text-align: right;
   font-weight: 600 !important;
+}
+
+/* Chart css */
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.card-header {
+  border-bottom-width: 1px;
+  background-color: #fff;
+  border-bottom: 0 solid transparent;
+  color: var(--bs-card-cap-color);
+  margin-bottom: 0;
+  padding: 1rem 1.25rem;
+}
+.card-header:first-child {
+  border-radius: var(--bs-card-inner-border-radius)
+    var(--bs-card-inner-border-radius) 0 0;
+}
+.card-title {
+  color: #939ba2;
+  font-size: 0.925rem;
+  font-weight: 600;
+}
+.card-subtitle {
+  font-weight: 400;
+}
+.text-muted {
+  --bs-text-opacity: 1;
+  color: rgba(73, 80, 87, 0.75) !important;
+}
+.card-body {
+  color: var(--bs-card-color);
+  flex: 1 1 auto;
+  padding: 1.25rem 1.25rem;
 }

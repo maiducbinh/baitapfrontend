@@ -103,7 +103,7 @@ function parseDataToExamContentVer2(data) {
         }
         id = id + 1;
         html += `<div  id="list-item-${id}" class="card mb-3">
-        <h5 class="card-header" style="background-color:${headerColor}">Question ${id}</h5>
+        <h5 class="card-header" style="background-color:${headerColor}; color: white">Question ${id}</h5>
         <div class="card-body">
           <p class="card-text fs-4">${element.question}</p>
           <ul class="d-flex flex-column mt-4 ps-0 pe-5 gap-3">`
@@ -148,7 +148,7 @@ function generateAnswerDetailTable(data)
                 <svg class="css-vubbuv"
                     focusable="false" aria-hidden="true" viewBox="0 0 24 24"
                     style="width: 12px; height: 12px; translate:0 2px">
-                    <circle cx="12" cy="12" r="8"></circle>
+                    <circle cx="12" cy="12" r="8" fill="${circleColor}"></circle>
                 </svg>
             </p>
         </td>
@@ -162,12 +162,35 @@ function generateAnswerDetailTable(data)
             <p class="css-1dtoqh9 wbbw">${element[`option${correctOption}`]}</p>
         </td>
         <td class="row-cell" colspan="2">
-            <p class="css-1dtoqh9 wbbw">(${decimalPart})</p>
+            <p class="css-1dtoqh9 wbbw" style="color: ${circleColor};">(${decimalPart})</p>
         </td>
     </tr>`
     })
     return html;
 }
+var pieChart = document.getElementById("chartjs-doughnut");
+pieChart.style.height = "250px"
+pieChart.style.width = "507px"
+new Chart(document.getElementById("chartjs-doughnut"), {
+    type: "pie",
+    data: {
+      labels: ["Làm đúng", "Làm sai", "Chưa hoàn thành"],
+      datasets: [{
+        data: [30, 8, 5],
+        backgroundColor: [
+            "rgb(56, 142, 60)",
+            "#c81f17",
+            "#dee2e6"
+        ],
+        borderColor: "transparent"
+      }]
+    },
+    options: { 
+      maintainAspectRatio: false,
+      cutoutPercentage: 0,
+      
+    }
+  });
 const container = document.querySelector('.question-view-container');
 const cardAnswerContainer = document.querySelector('.table-question');
 const detailAnswerContainer = document.querySelector('.tb-body');
